@@ -20,7 +20,8 @@ supports PostgreSQL and Cassandra).
     Issue the following command to [start][CLI] Kong:
 
     ```bash
-    $ kong start
+    # specify migrations flag to initialise the datastore
+    $ kong start --run-migrations
     ```
 
     **Note:** The CLI also accepts a configuration (`-c <path_to_config>`)

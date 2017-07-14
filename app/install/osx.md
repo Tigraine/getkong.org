@@ -35,7 +35,8 @@ breadcrumbs:
 3. **Start Kong:**
 
     ```bash
-    $ kong start
+    # specify migrations flag to initialise the datastore
+    $ kong start --run-migrations
 
     # Kong is running
     $ curl 127.0.0.1:8001
